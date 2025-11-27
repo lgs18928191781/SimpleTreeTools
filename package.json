@@ -10,14 +10,8 @@
     "dev": "vite",
     "build": "vite build",
     "build:check": "vue-tsc -b && vite build",
-    "preview": "vite preview",
-    "preinstall": "node scripts/check-node-version.js",
-    "setup": "node scripts/setup-node.js",
-    "setup:node": "chmod +x ./scripts/setup-node-environment.sh && ./scripts/setup-node-environment.sh",
-    "postinstall": "node -v | grep -q v20.19.1 || (echo '⚠️  Node.js 版本不正确，请运行: nvm use 20.19.1' && npm run setup:node)",
-    "prestart": "./scripts/auto-switch-node.sh",
-    "prebuild": "./scripts/auto-switch-node.sh",
-    "pretest": "./scripts/auto-switch-node.sh"
+    "preview": "vite preview"
+  
   },
   "bin": {
     "check-node": "./scripts/check-node-version.js"
